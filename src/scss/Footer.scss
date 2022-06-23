@@ -143,6 +143,9 @@
           &__email {
             input {
               height: 37px;
+              outline: none;
+              padding: 0 10px;
+              //
             }
             &__button {
               button {
