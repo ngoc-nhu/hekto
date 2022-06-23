@@ -1,0 +1,219 @@
+.content__leatest {
+  margin-top: 71px;
+  &__products {
+    text-align: center;
+    h1 {
+      color: #151875;
+      font: "Josefin Sans";
+      font-size: 42px;
+    }
+  }
+  &__menu {
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 58px;
+    a.a1 {
+      text-decoration: underline;
+      color: #fb2e86;
+    }
+    a {
+      color: #151875;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      text-decoration: none;
+      margin-right: 58px;
+    }
+  }
+  &__slide {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 35px;
+    grid-row-gap: 57px;
+    p {
+      color: #151875;
+      font: "Josefin Sans";
+      font-size: 16px;
+    }
+    .pricesale p.sale {
+      color: #fb2448;
+      font: "Josefin Sans";
+      font-size: 12px;
+      text-decoration-line: line-through;
+    }
+    .pricesale p {
+      color: #151875;
+      font-family: "Josefin Sans";
+      font-size: 14px;
+      margin-left: 8px;
+    }
+    .name {
+      margin-top: 8px;
+    }
+    &__chairone {
+      &__img {
+        background: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 270px;
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+    &__chairtwo {
+      &__img {
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        position: relative;
+        &__img2 {
+          height: 230px;
+          max-height: 100%;
+          img {
+            max-height: 100%;
+          }
+        }
+
+        &__sale {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &__shop {
+          position: absolute;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          row-gap: 18px;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 14px;
+            height: 13px;
+          }
+          img.img1 {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+    &__chairthree {
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f7f7;
+        height: 270px;
+        &__img3 {
+          height: 229px;
+          max-height: 100%;
+          margin-top: 38px;
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+    &__chairfour {
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f7f7;
+        height: 270px;
+        &__img4 {
+          height: 264px;
+          max-height: 100%;
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+    &__chairfive {
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f7f7;
+        height: 270px;
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+    &__chairsix {
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f7f7;
+        height: 270px;
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .pricesale {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:25.875em) {
+  .content__leatest__menu {
+    a {
+      margin-right: 10px;
+      font-size: 13px;
+    }
+  }
+  .content__leatest__slide {
+    display: grid;
+    grid-template-columns: 295px;
+  }
+}

@@ -1,0 +1,11 @@
+.content__logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 96px;
+}
+@media only screen and(max-width:25.875em) {
+  .content__logo {
+    display: none;
+  }
+}
