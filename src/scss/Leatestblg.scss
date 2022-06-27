@@ -36,6 +36,7 @@
       }
       a {
         line-height: 2.5;
+        text-decoration-line: underline;
       }
       &__saber {
         display: flex;
@@ -85,6 +86,7 @@
       a {
         line-height: 2.5;
         color: #fb2e86;
+        text-decoration-line: underline;
       }
       &__saber {
         display: flex;
@@ -105,16 +107,16 @@
     }
   }
 }
-@media only screen and(max-width:25.9375em) {
+@media only screen and(max-width:495px) {
   .content__leatestblg__blog {
     margin-bottom: 70px;
   }
   .content__leatestblg__top {
     display: grid;
-    grid-template-columns: 290px;
+    grid-template-columns: 85%;
     &__esssential {
       img.img1 {
-        width: 290px;
+        width: 100%;
       }
       p {
         font-size: 14px;
@@ -125,7 +127,7 @@
     }
     &__trend {
       img.img1 {
-        width: 290px;
+        width: 100%;
       }
       p {
         font-size: 14px;
@@ -135,7 +137,69 @@
       }
     }
   }
-  .footer__top__logo {
-    margin: 0 10px;
+}
+@media only screen and(min-width:495px) and(max-width:767px) {
+  .content__leatestblg__blog {
+    margin-bottom: 70px;
+  }
+  .content__leatestblg__top {
+    display: grid;
+    grid-template-columns: 85%;
+    &__esssential {
+      img.img1 {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+      }
+      a {
+        font-size: 15px;
+      }
+    }
+    &__trend {
+      img.img1 {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+      }
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and(min-width:768px) and(max-width:1275px) {
+  .content__leatestblg__top {
+    grid-template-columns: 31% 31% 31%;
+    grid-column-gap: 2%;
+  }
+  .content__leatestblg__top__esssential {
+    img.img1 {
+      width: 100%;
+    }
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+  .content__leatestblg__top__trend {
+    p {
+      font-size: 14px;
+    }
+    img.img1 {
+      width: 100%;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    a {
+      font-size: 15px;
+    }
   }
 }

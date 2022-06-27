@@ -176,7 +176,7 @@
   }
 }
 
-@media only screen and(max-width:25.9375em) {
+@media only screen and(max-width:495px) {
   .content__trending {
     margin-top: 55px;
     &__products {
@@ -187,7 +187,7 @@
     &__productitems {
       &__item1 {
         display: grid;
-        grid-template-columns: 250px;
+        grid-template-columns: 86%;
         &__cantilever {
           &__chair {
             img.chair4 {
@@ -198,8 +198,8 @@
       }
       &__item2 {
         display: grid;
-        grid-template-columns: 250px;
-        row-gap: 20px;
+        grid-template-columns: 85%;
+        row-gap: 3%;
         &__sale1 {
           &__all {
             img {
@@ -227,6 +227,99 @@
           }
         }
       }
+    }
+  }
+}
+@media only screen and(min-width:495px) and(max-width:767px) {
+  .content__trending {
+    margin-top: 55px;
+    &__products {
+      h1 {
+        font-size: 40px;
+      }
+    }
+    &__productitems {
+      &__item1 {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        &__cantilever {
+          &__chair {
+            img.chair4 {
+              width: 245px;
+            }
+          }
+        }
+      }
+      &__item2 {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        row-gap: 3%;
+        &__sale1 {
+          &__all {
+            img {
+              width: 170px;
+            }
+          }
+          &__products {
+            left: 14px;
+            h2 {
+              font-size: 21px;
+            }
+          }
+        }
+        &__sale2 {
+          &__products {
+            left: 14px;
+            h2 {
+              font-size: 21px;
+            }
+          }
+          &__all {
+            img {
+              width: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and(min-width:768px) and(max-width:1275px) {
+  .content__trending__productitems__item1 {
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2%;
+    &__cantilever {
+      &__chair {
+        img.chair1 {
+          top: 0;
+        }
+        img.chair2 {
+          top: 0;
+          width: 100%;
+        }
+        img.chair3 {
+          top: 0;
+          width: 100%;
+        }
+        img.chair4 {
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .content__trending__productitems__item2 {
+    grid-template-columns: 36% 36% 23%;
+    grid-column-gap: 2%;
+  }
+  .content__trending__productitems__item2__sale1__all {
+    img {
+      width: 85%;
+    }
+  }
+  .content__trending__productitems__item2__sale2__all {
+    img {
+      width: 85%;
     }
   }
 }

@@ -6,8 +6,18 @@ function Featured() {
       </div>
       <div className="content__featured__slide">
         <div className="content__featured__slide__chairone">
+          <div className="content__featured__slide__chairone__icon">
+            <div className="content__featured__slide__chairone__icon__shop">
+              <img className="img1" alt="" src="./images/Group.png"></img>
+              <img alt="" src="./images/Vector (1).png"></img>
+              <img alt="" src="./images/Vector.png"></img>
+            </div>
+          </div>
           <div className="content__featured__slide__chairone__img">
             <img alt="" src="./images/image 1168.png"></img>
+            <div className="content__featured__slide__chairone__img__button">
+              <button>View Details</button>
+            </div>
           </div>
           <div className="content__featured__slide__chairone__price">
             <h2>Cantilever chair</h2>

@@ -53,13 +53,13 @@ function Leatest() {
             </div>
           </div>
         </div>
-        <div className="content__leatest__slide__chairthree">
-          <div className="content__leatest__slide__chairthree__img">
-            <div className="content__leatest__slide__chairthree__img__img3">
+        <div className="content__leatest__slide__chairone">
+          <div className="content__leatest__slide__chairone__img">
+            <div className="content__leatest__slide__chairone__img__img3">
               <img alt="" src="./images/image 1168.png"></img>
             </div>
           </div>
-          <div className="content__leatest__slide__chairthree__price">
+          <div className="content__leatest__slide__chairone__price">
             <div className="name">
               <p>Comfort Handy Craft</p>
             </div>
@@ -69,13 +69,13 @@ function Leatest() {
             </div>
           </div>
         </div>
-        <div className="content__leatest__slide__chairfour">
-          <div className="content__leatest__slide__chairfour__img">
-            <div className="content__leatest__slide__chairfour__img__img4">
+        <div className="content__leatest__slide__chairone">
+          <div className="content__leatest__slide__chairone__img">
+            <div className="content__leatest__slide__chairone__img__img4">
               <img alt="" src="./images/image 23.png"></img>
             </div>
           </div>
-          <div className="content__leatest__slide__chairfour__price">
+          <div className="content__leatest__slide__chairone__price">
             <div className="name">
               <p>Comfort Handy Craft</p>
             </div>
@@ -85,11 +85,11 @@ function Leatest() {
             </div>
           </div>
         </div>
-        <div className="content__leatest__slide__chairfive">
-          <div className="content__leatest__slide__chairfive__img">
+        <div className="content__leatest__slide__chairone">
+          <div className="content__leatest__slide__chairone__img">
             <img alt="" src="./images/image 32.png"></img>
           </div>
-          <div className="content__leatest__slide__chairfive__price">
+          <div className="content__leatest__slide__chairone__price">
             <div className="name">
               <p>Comfort Handy Craft</p>
             </div>
@@ -99,11 +99,11 @@ function Leatest() {
             </div>
           </div>
         </div>
-        <div className="content__leatest__slide__chairsix">
-          <div className="content__leatest__slide__chairsix__img">
+        <div className="content__leatest__slide__chairone">
+          <div className="content__leatest__slide__chairone__img">
             <img alt="" src="./images/image 3 (1).png"></img>
           </div>
-          <div className="content__leatest__slide__chairsix__price">
+          <div className="content__leatest__slide__chairone__price">
             <div className="name">
               <p>Comfort Handy Craft</p>
             </div>
