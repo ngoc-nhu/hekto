@@ -29,7 +29,7 @@
         }
       }
       &__chairone {
-        box-shadow: -0.25em 0.25em 0 0 #9877e7;
+        // box-shadow: -0.25em 0.25em 0 0 #9877e7;
         height: 269px;
         width: 100%;
         border-radius: 50%;
@@ -51,6 +51,14 @@
         }
       }
     }
+  }
+}
+.content__top__mini__LCW:hover {
+  .content__top__mini__LCW__chairone {
+    box-shadow: -0.25em 0.25em 0 0 #9877e7;
+  }
+  .content__top__mini__LCW__chair {
+    box-shadow: -0.25em 0.25em 0 0 #9877e7;
   }
 }
 @media only screen and(max-width:495px) {

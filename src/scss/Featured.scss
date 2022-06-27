@@ -360,83 +360,6 @@
         }
       }
     }
-    &__chairtwo {
-      &__img {
-        height: 180px;
-        img {
-          width: 120px;
-          height: 120px;
-          margin-top: 1.5rem;
-        }
-        &__button {
-          position: absolute;
-          bottom: 0.5em;
-          button {
-            width: 80px;
-            height: 25px;
-          }
-        }
-      }
-      &__price {
-        line-height: 1.3;
-        height: 80px;
-        h2 {
-          font-size: 15px;
-        }
-        p.code {
-          font-size: 12px;
-        }
-        p.price {
-          font-size: 12px;
-        }
-      }
-    }
-    &__chairthree {
-      &__img {
-        height: 180px;
-        img {
-          width: 120px;
-          height: 120px;
-          margin-top: 2rem;
-        }
-      }
-      &__price {
-        line-height: 1.3;
-        height: 80px;
-        h2 {
-          font-size: 15px;
-        }
-        p.code {
-          font-size: 12px;
-        }
-        p.price {
-          font-size: 12px;
-        }
-      }
-    }
-    &__chairfour {
-      &__img {
-        height: 180px;
-        img {
-          width: 120px;
-          height: 120px;
-          margin-top: 2rem;
-        }
-      }
-      &__price {
-        line-height: 1.3;
-        height: 80px;
-        h2 {
-          font-size: 15px;
-        }
-        p.code {
-          font-size: 12px;
-        }
-        p.price {
-          font-size: 12px;
-        }
-      }
-    }
   }
   .content__featured .divide {
     display: none;
@@ -456,6 +379,12 @@
     h2 {
       color: #ffffff;
     }
+  }
+  .content__featured__slide__chairone__icon {
+    display: block;
+  }
+  .content__featured__slide__chairone__img__button {
+    display: block;
   }
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {

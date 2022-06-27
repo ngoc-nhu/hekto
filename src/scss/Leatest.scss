@@ -52,12 +52,45 @@
       margin-left: 8px;
     }
     &__chairone {
+      position: relative;
       &__img {
         background: #f7f7f7;
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
         height: 270px;
+
+        &__sale {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+        }
+        &__shop {
+          position: absolute;
+          left: 0;
+          display: none;
+          bottom: 50px;
+          &__like {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+
+            img {
+              width: 14px;
+              height: 13px;
+            }
+            img.img1 {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
       }
       &__price {
         display: flex;
@@ -89,22 +122,27 @@
           position: absolute;
           top: 0;
           left: 0;
+          display: none;
         }
         &__shop {
+          display: none;
           position: absolute;
           left: 0;
-          display: flex;
-          flex-direction: column;
-          row-gap: 18px;
-          justify-content: center;
-          align-items: center;
-          img {
-            width: 14px;
-            height: 13px;
-          }
-          img.img1 {
-            width: 30px;
-            height: 30px;
+          bottom: 50px;
+          &__like {
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 14px;
+              height: 13px;
+            }
+            img.img1 {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
       }
@@ -118,6 +156,22 @@
         display: flex;
       }
     }
+  }
+}
+.content__leatest__slide__chairone:hover {
+  .content__leatest__slide__chairone__img__sale {
+    display: block;
+  }
+  .content__leatest__slide__chairone__img__shop {
+    display: block;
+  }
+}
+.content__leatest__slide__chairtwo:hover {
+  .content__leatest__slide__chairtwo__img__sale {
+    display: block;
+  }
+  .content__leatest__slide__chairtwo__img__shop {
+    display: block;
   }
 }
 
@@ -162,9 +216,6 @@
       grid-row-gap: 8%;
       &__chairone {
         &__img {
-          img {
-            width: 100%;
-          }
         }
       }
     }

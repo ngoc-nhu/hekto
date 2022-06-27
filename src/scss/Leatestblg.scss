@@ -1,4 +1,5 @@
 .content__leatestblg {
+  margin-bottom: 135px;
   &__blog {
     margin-bottom: 80px;
     h1 {
@@ -80,12 +81,12 @@
       h4 {
         font-family: "Josefin Sans";
         font-size: 18px;
-        color: #fb2e86;
+        color: #151875;
         line-height: 2.5;
       }
       a {
         line-height: 2.5;
-        color: #fb2e86;
+        color: #151875;
         text-decoration-line: underline;
       }
       &__saber {
@@ -105,6 +106,22 @@
         }
       }
     }
+  }
+}
+.content__leatestblg__top__esssential:hover {
+  h4 {
+    color: #fb2e86;
+  }
+  a {
+    color: #fb2e86;
+  }
+}
+.content__leatestblg__top__trend:hover {
+  h4 {
+    color: #fb2e86;
+  }
+  a {
+    color: #fb2e86;
   }
 }
 @media only screen and(max-width:495px) {
