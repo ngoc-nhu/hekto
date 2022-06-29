@@ -1,3 +1,4 @@
+import TrendingProducts from "./TrendingProducts";
 function Trending() {
   return (
     <div className="content__trending">
@@ -6,62 +7,10 @@ function Trending() {
       </div>
       <div className="content__trending__productitems">
         <div className="content__trending__productitems__item1">
-          <div className="content__trending__productitems__item1__cantilever">
-            <div className="content__trending__productitems__item1__cantilever__chair">
-              <img
-                className="chair1"
-                alt=""
-                src="./images/image 1171.png"
-              ></img>
-            </div>
-            <div className="content__trending__productitems__item1__cantilever__price">
-              <h2>Cantilever chair</h2>
-              <div className="content__trending__productitems__item1__cantilever__price__sale">
-                <p>$26.00 </p>
-                <p className="sale">$42.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="content__trending__productitems__item1__cantilever">
-            <div className="content__trending__productitems__item1__cantilever__chair">
-              <img
-                className="chair2"
-                alt=""
-                src="./images/image 1170.png"
-              ></img>
-            </div>
-            <div className="content__trending__productitems__item1__cantilever__price">
-              <h2>Cantilever chair</h2>
-              <div className="content__trending__productitems__item1__cantilever__price__sale">
-                <p>$26.00 </p>
-                <p className="sale">$42.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="content__trending__productitems__item1__cantilever">
-            <div className="content__trending__productitems__item1__cantilever__chair">
-              <img className="chair3" alt="" src="./images/image 31.png"></img>
-            </div>
-            <div className="content__trending__productitems__item1__cantilever__price">
-              <h2>Cantilever chair</h2>
-              <div className="content__trending__productitems__item1__cantilever__price__sale">
-                <p>$26.00 </p>
-                <p className="sale">$42.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="content__trending__productitems__item1__cantilever">
-            <div className="content__trending__productitems__item1__cantilever__chair">
-              <img className="chair4" alt="" src="./images/image 32.png"></img>
-            </div>
-            <div className="content__trending__productitems__item1__cantilever__price">
-              <h2>Cantilever chair</h2>
-              <div className="content__trending__productitems__item1__cantilever__price__sale">
-                <p>$26.00 </p>
-                <p className="sale">$42.00</p>
-              </div>
-            </div>
-          </div>
+          <TrendingProducts image="./images/image 1171.png" />
+          <TrendingProducts image="./images/image 1170.png" />
+          <TrendingProducts image="./images/image 31.png" />
+          <TrendingProducts image="./images/image 32.png" />
         </div>
         <div className="content__trending__productitems__item2">
           <div className="content__trending__productitems__item2__sale1">

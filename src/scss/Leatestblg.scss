@@ -64,48 +64,6 @@
         gap: 7px;
       }
     }
-    &__trend {
-      font-family: "Josefin Sans";
-      font-size: 18px;
-      color: #151875;
-      box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-      border-radius: 5px;
-      p {
-        color: #72718f;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-      }
-      h4 {
-        font-family: "Josefin Sans";
-        font-size: 18px;
-        color: #151875;
-        line-height: 2.5;
-      }
-      a {
-        line-height: 2.5;
-        color: #151875;
-        text-decoration-line: underline;
-      }
-      &__saber {
-        display: flex;
-        gap: 29px;
-        &__ali {
-          display: flex;
-          gap: 7px;
-          justify-content: center;
-          align-items: center;
-        }
-        &__date {
-          display: flex;
-          gap: 7px;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-    }
   }
 }
 .content__leatestblg__top__esssential:hover {

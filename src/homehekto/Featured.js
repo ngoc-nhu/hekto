@@ -1,3 +1,4 @@
+import FeaturedProduct from "./FeaturedProdcuts";
 function Featured() {
   return (
     <div className="content__featured">
@@ -5,98 +6,10 @@ function Featured() {
         <p>Featured Products</p>
       </div>
       <div className="content__featured__slide">
-        <div className="content__featured__slide__chairone">
-          <div className="content__featured__slide__chairone__icon">
-            <div className="content__featured__slide__chairone__icon__shop">
-              <img className="img1" alt="" src="./images/Group.png"></img>
-              <img alt="" src="./images/Vector (1).png"></img>
-              <img alt="" src="./images/Vector.png"></img>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__img">
-            <img alt="" src="./images/image 1168.png"></img>
-            <div className="content__featured__slide__chairone__img__button">
-              <button>View Details</button>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__price">
-            <h2>Cantilever chair</h2>
-            <img alt="" src="./images/Rectangle 93.png"></img>
-            <img alt="" src="./images/Rectangle 94.png"></img>
-            <img alt="" src="./images/Rectangle 95.png"></img>
-            <p className="code">Code - Y523201</p>
-            <p className="price">$42.00</p>
-          </div>
-        </div>
-        <div className="content__featured__slide__chairone">
-          <div className="content__featured__slide__chairone__icon">
-            <div className="content__featured__slide__chairone__icon__shop">
-              <img className="img1" alt="" src="./images/Group.png"></img>
-              <img alt="" src="./images/Vector (1).png"></img>
-              <img alt="" src="./images/Vector.png"></img>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__img">
-            <img alt="" src="./images/image 1.png"></img>
-            <div className="content__featured__slide__chairone__img__button">
-              <button>View Details</button>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__price">
-            <h2>Cantilever chair</h2>
-            <img alt="" src="./images/Rectangle 93.png"></img>
-            <img alt="" src="./images/Rectangle 94.png"></img>
-            <img alt="" src="./images/Rectangle 95.png"></img>
-            <p className="code">Code - Y523201</p>
-            <p className="price">$42.00</p>
-          </div>
-        </div>
-        <div className="content__featured__slide__chairone">
-          <div className="content__featured__slide__chairone__icon">
-            <div className="content__featured__slide__chairone__icon__shop">
-              <img className="img1" alt="" src="./images/Group.png"></img>
-              <img alt="" src="./images/Vector (1).png"></img>
-              <img alt="" src="./images/Vector.png"></img>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__img">
-            <img alt="" src="./images/image 1169.png"></img>
-            <div className="content__featured__slide__chairone__img__button">
-              <button>View Details</button>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__price">
-            <h2>Cantilever chair</h2>
-            <img alt="" src="./images/Rectangle 93.png"></img>
-            <img alt="" src="./images/Rectangle 94.png"></img>
-            <img alt="" src="./images/Rectangle 95.png"></img>
-            <p className="code">Code - Y523201</p>
-            <p className="price">$42.00</p>
-          </div>
-        </div>
-        <div className="content__featured__slide__chairone">
-          <div className="content__featured__slide__chairone__icon">
-            <div className="content__featured__slide__chairone__icon__shop">
-              <img className="img1" alt="" src="./images/Group.png"></img>
-              <img alt="" src="./images/Vector (1).png"></img>
-              <img alt="" src="./images/Vector.png"></img>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__img">
-            <img alt="" src="./images/image 3.png"></img>
-            <div className="content__featured__slide__chairone__img__button">
-              <button>View Details</button>
-            </div>
-          </div>
-          <div className="content__featured__slide__chairone__price">
-            <h2>Cantilever chair</h2>
-            <img alt="" src="./images/Rectangle 93.png"></img>
-            <img alt="" src="./images/Rectangle 94.png"></img>
-            <img alt="" src="./images/Rectangle 95.png"></img>
-            <p className="code">Code - Y523201</p>
-            <p className="price">$42.00</p>
-          </div>
-        </div>
+        <FeaturedProduct image="./images/image 1168.png" />
+        <FeaturedProduct image="./images/image 1.png" />
+        <FeaturedProduct image="./images/image 1169.png" />
+        <FeaturedProduct image="./images/image 3.png" />
       </div>
       <div className="divide">
         <img alt="" src="./images/Rectangle 104.png"></img>
