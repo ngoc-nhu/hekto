@@ -24,34 +24,20 @@
           background: #f5f6f8;
           padding-top: 100%;
 
-          img.chair1 {
+          img {
             top: 41px;
             position: absolute;
             left: 0;
             right: 0;
             margin: auto;
           }
-          img.chair2 {
-            top: 28px;
+          img.img4 {
+            top: 15px;
             position: absolute;
             left: 0;
             right: 0;
             margin: auto;
-          }
-          img.chair3 {
-            top: 27px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-          }
-          img.chair4 {
-            top: 10px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 250px;
+            width: 100%;
           }
         }
         &__price {
@@ -291,18 +277,7 @@
     grid-column-gap: 2%;
     &__cantilever {
       &__chair {
-        img.chair1 {
-          top: 0;
-        }
-        img.chair2 {
-          top: 0;
-          width: 100%;
-        }
-        img.chair3 {
-          top: 0;
-          width: 100%;
-        }
-        img.chair4 {
+        img {
           top: 0;
           width: 100%;
         }

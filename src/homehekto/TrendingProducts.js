@@ -2,7 +2,7 @@ function TrendingProducts({ image }) {
   return (
     <div className="content__trending__productitems__item1__cantilever">
       <div className="content__trending__productitems__item1__cantilever__chair">
-        <img className="chair1" alt="" src={image}></img>
+        <img alt="" src={image}></img>
       </div>
       <div className="content__trending__productitems__item1__cantilever__price">
         <h2>Cantilever chair</h2>
