@@ -22,9 +22,9 @@ function Trending() {
   var settings1 = {
     dots: false,
     arrows: false,
-    // autoplay: true,
-    // slidesPerRow: 1,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    slidesPerRow: 1,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 767,
@@ -32,9 +32,9 @@ function Trending() {
           arrows: false,
           slidesToShow: 2,
           slideToSroll: 2,
-          // autoplay: true,
-          // slidesPerRow: 1,
-          // autoplaySpeed: 3000,
+          autoplay: true,
+          slidesPerRow: 1,
+          autoplaySpeed: 3000,
           rows: 1,
         },
       },

@@ -6,13 +6,22 @@ class Shopex extends React.Component {
   render() {
     var settings = {
       dots: true,
-      arrows: false,
-      slidesToScroll: 2,
-      slidesToShow: 2,
-      rows: 2,
-      slidesPerRow: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      infinite: false,
+      arows: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            rows: 2,
+          },
+        },
+      ],
     };
     const listImages = [
       "./images/free-delivery 1.png",
@@ -38,10 +47,11 @@ class Shopex extends React.Component {
             </Slider>
           </div>
           <div id="shopex__pc">
-            <ShopexOffer image="./images/free-delivery 1.png" />
-            <ShopexOffer image="./images/cashback 1.png" />
-            <ShopexOffer image="./images/premium-quality 1.png" />
-            <ShopexOffer image="./images/24-hours-support 1.png" />
+            <Slider {...settings}>
+              {listImages.map((image) => (
+                <ShopexOffer image={image} />
+              ))}
+            </Slider>
           </div>
         </div>
       </div>

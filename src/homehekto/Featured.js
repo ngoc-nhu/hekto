@@ -8,13 +8,22 @@ class Featured extends React.Component {
     var settings = {
       dots: true,
       arrows: false,
-      slidesToScroll: 2,
-      slidesToShow: 2,
-      rows: 2,
-      slidesPerRow: 1,
-      centerPadding: "60px",
+      slidesToShow: 4,
+      slideToSroll: 4,
       autoplay: true,
+      slidesPerRow: 1,
       autoplaySpeed: 3000,
+      rows: 1,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            rows: 2,
+          },
+        },
+      ],
     };
     const listImages = [
       "./images/image 1168.png",
@@ -38,11 +47,12 @@ class Featured extends React.Component {
                 ))}
               </Slider>
             </div>
-            <div id="featured__pc">
-              <FeaturedProduct image="./images/image 1168.png" />
-              <FeaturedProduct image="./images/image 1.png" />
-              <FeaturedProduct image="./images/image 1169.png" />
-              <FeaturedProduct image="./images/image 3.png" />
+            <div id="featured__ipad">
+              <Slider {...settings}>
+                {listImages.map((image) => (
+                  <FeaturedProduct image={image} />
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

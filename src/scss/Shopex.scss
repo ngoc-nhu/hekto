@@ -113,6 +113,12 @@
 @media only screen and(min-width:768px) and(max-width:1275px) {
   .content__shopex__support {
     grid-column-gap: 2%;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: 95%;
+    #shopex__mobile {
+      display: none;
+    }
+    #shopex__pc {
+      display: block;
+    }
   }
 }

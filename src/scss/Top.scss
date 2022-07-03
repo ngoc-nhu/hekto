@@ -91,20 +91,17 @@
 @media only screen and(min-width:496px) and(max-width:767px) {
   .content__top__mini {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 90%;
   }
   .content__top__categories {
     margin-top: 50px;
     margin-bottom: 50px;
   }
   #mobile {
-    display: none;
+    display: block;
   }
   #pc {
     display: none;
-  }
-  #tablet {
-    display: block;
   }
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {

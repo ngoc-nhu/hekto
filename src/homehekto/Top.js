@@ -8,16 +8,32 @@ class Top extends React.Component {
     var settings = {
       dots: true,
       arrows: false,
-      slideToShow: 1,
-      slideToSroll: 1,
-      rows: 1,
-    };
-    var settingstop = {
-      dots: true,
-      arrows: false,
-      slideToShow: 2,
-      slideToSroll: 2,
-      rows: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slideToSroll: 2,
+            autoplay: true,
+            slidesPerRow: 1,
+            autoplaySpeed: 3000,
+            rows: 1,
+          },
+        },
+        {
+          breakpoint: 495,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slideToSroll: 1,
+            autoplay: true,
+            slidesPerRow: 1,
+            autoplaySpeed: 3000,
+            rows: 1,
+          },
+        },
+      ],
     };
     const listImages = [
       "./images/image 20.png",
@@ -33,13 +49,6 @@ class Top extends React.Component {
         <div className="content__top__mini">
           <div id="mobile">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <TopCategories image={image} />
-              ))}
-            </Slider>
-          </div>
-          <div id="tablet">
-            <Slider {...settingstop}>
               {listImages.map((image) => (
                 <TopCategories image={image} />
               ))}

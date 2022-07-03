@@ -194,7 +194,7 @@
     }
   }
 
-  #Leatest__pc {
+  #leatest__pc {
     display: none;
   }
   #leatest__tablet {
@@ -225,7 +225,7 @@
   #slider {
     display: none;
   }
-  #Leatest__pc {
+  #leatest__pc {
     display: none;
   }
   .content__leatest__slide {
@@ -244,7 +244,7 @@
   .content__leatest {
     margin-bottom: 90px;
     &__slide {
-      grid-template-columns: 31% 31% 31%;
+      grid-template-columns: 95%;
       grid-column-gap: 2%;
       grid-row-gap: 8%;
       &__chairone {
@@ -252,5 +252,14 @@
         }
       }
     }
+  }
+  #slider {
+    display: none;
+  }
+  #leatest__tablet {
+    display: none;
+  }
+  #leatest__pc {
+    display: block;
   }
 }

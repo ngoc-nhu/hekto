@@ -124,6 +124,9 @@
 #featured__mobile {
   display: none;
 }
+#featured__ipad {
+  display: none;
+}
 .slick-track {
   display: flex;
   gap: 15px;
@@ -175,6 +178,7 @@
   #featured__mobile {
     display: block;
   }
+
   .content__featured__products {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -184,7 +188,7 @@
     grid-template-columns: 90%;
     height: auto;
     column-gap: 4%;
-    #featured__pc {
+    #featured__ipad {
       display: none;
     }
     &__chairone {
@@ -237,8 +241,14 @@
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {
   .content__featured {
+    #featured__mobile {
+      display: none;
+    }
+    #featured__ipad {
+      display: block;
+    }
     &__slide {
-      grid-template-columns: 24% 24% 24% 24%;
+      grid-template-columns: 90%;
       gap: 1%;
       &__chairone {
         &__img {
