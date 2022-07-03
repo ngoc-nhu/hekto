@@ -16,6 +16,16 @@ class Featured extends React.Component {
       autoplay: true,
       autoplaySpeed: 3000,
     };
+    const listImages = [
+      "./images/image 1168.png",
+      "./images/image 3.png",
+      "./images/image 1169.png",
+      "./images/image 1.png",
+      "./images/image 1168.png",
+      "./images/image 3.png",
+      "./images/image 1169.png",
+      "./images/image 1.png",
+    ];
     return (
       <div className="content__featured">
         <div className="content__featured__products">
@@ -23,14 +33,9 @@ class Featured extends React.Component {
           <div className="content__featured__slide">
             <div id="featured__mobile">
               <Slider {...settings}>
-                <FeaturedProduct image="./images/image 1168.png" />
-                <FeaturedProduct image="./images/image 3.png" />
-                <FeaturedProduct image="./images/image 1169.png" />
-                <FeaturedProduct image="./images/image 1.png" />
-                <FeaturedProduct image="./images/image 1168.png" />
-                <FeaturedProduct image="./images/image 3.png" />
-                <FeaturedProduct image="./images/image 1169.png" />
-                <FeaturedProduct image="./images/image 1.png" />
+                {listImages.map((image) => (
+                  <FeaturedProduct image={image} />
+                ))}
               </Slider>
             </div>
             <div id="featured__pc">

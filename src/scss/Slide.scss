@@ -80,6 +80,7 @@
     }
   }
 }
+
 @media only screen and(max-width:495px) {
   .slide__img {
     img {
@@ -109,6 +110,10 @@
     width: 100%;
     height: 170px;
     position: relative;
+    .slick-track {
+      display: flex;
+      gap: 0px;
+    }
   }
   .slide__content {
     p.p1 {

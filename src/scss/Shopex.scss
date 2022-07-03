@@ -80,14 +80,20 @@
   }
 }
 
-@media only screen and(min-width:495px) and(max-width:767px) {
+@media only screen and(min-width:495px) and(max-width:768px) {
+  #shopex__mobile {
+    display: block;
+  }
   .content__shopex {
     margin-bottom: 90px;
   }
   .content__shopex__support {
     display: grid;
     grid-column-gap: 4%;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 90%;
+    #shopex__pc {
+      display: none;
+    }
     h2 {
       font-size: 20px;
       line-height: 2.5;

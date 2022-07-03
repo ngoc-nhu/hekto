@@ -1,4 +1,7 @@
 .content__trending {
+  #trending__mobile {
+    display: none;
+  }
   margin-top: 132px;
   &__products {
     margin-bottom: 39px;
@@ -17,11 +20,10 @@
       justify-content: center;
       grid-column-gap: 29px;
       &__cantilever {
-        height: 350px;
+        height: auto;
         margin-bottom: 39px;
         &__chair {
           position: relative;
-          background: #f5f6f8;
           padding-top: 100%;
 
           img {
@@ -187,12 +189,26 @@
       }
     }
     &__productitems {
+      #trending__pc {
+        display: none;
+      }
+      #trending__mobile {
+        display: block;
+      }
+
+      #trending__tablet {
+        display: none;
+      }
       &__item1 {
         display: grid;
         grid-template-columns: 86%;
         &__cantilever {
           margin-bottom: 60px;
           &__chair {
+            img {
+              top: 0;
+              width: 100%;
+            }
             img.chair4 {
               width: 245px;
             }
@@ -242,20 +258,36 @@
       }
     }
     &__productitems {
+      #trending__pc {
+        display: none;
+      }
+      #trending__mobile {
+        display: none;
+      }
+
       &__item1 {
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 90%;
         &__cantilever {
           &__chair {
             img.chair4 {
               width: 245px;
             }
           }
+          &__price {
+            margin-top: 40px;
+          }
         }
       }
       &__item2 {
+        #trending__tablet {
+          display: block;
+        }
+        &__executive {
+          height: 270px;
+        }
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 90%;
         row-gap: 3%;
         &__sale1 {
           &__all {

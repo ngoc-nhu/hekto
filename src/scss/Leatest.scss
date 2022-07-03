@@ -182,22 +182,31 @@
 }
 
 @media only screen and(max-width:495px) {
+  .content__trending__productitems__item1__cantilever__price {
+    text-align: center;
+    margin-top: 25px;
+    line-height: 2;
+  }
   .content__leatest__menu {
     a {
       margin-right: 10px;
       font-size: 13px;
     }
   }
-  .content__leatest #slider {
-    display: block;
-  }
+
   #Leatest__pc {
+    display: none;
+  }
+  #leatest__tablet {
     display: none;
   }
   .content__leatest__slide {
     display: grid;
     grid-template-columns: 85%;
     height: auto;
+    #slider {
+      display: block;
+    }
     img {
       max-width: 100%;
     }
@@ -213,10 +222,19 @@
       font-size: 18px;
     }
   }
+  #slider {
+    display: none;
+  }
+  #Leatest__pc {
+    display: none;
+  }
   .content__leatest__slide {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 90%;
     height: auto;
+    #leatest__tablet {
+      display: block;
+    }
     img {
       max-width: 100%;
     }
