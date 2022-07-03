@@ -4,6 +4,8 @@ import Footer from "./homehekto/Footer";
 import Header from "./homehekto/Header";
 import Navbar from "./homehekto/Navbar";
 import Slide from "./homehekto/Slide";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./scss/Featured.scss";
 import "./scss/Header.scss";
 import "./scss/Navbar.scss";

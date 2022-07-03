@@ -48,8 +48,8 @@ function Trending() {
                 <img alt="" src="./images/image 30.png"></img>
               </div>
               <div className="content__trending__productitems__item2__executive__seat__chair">
-                <p>Executive Seat chair</p>
-                <p>$32.00</p>
+                <p className="name">Executive Seat chair</p>
+                <p className="price">$32.00</p>
               </div>
             </div>
             <div className="content__trending__productitems__item2__executive__seat">
@@ -57,8 +57,8 @@ function Trending() {
                 <img alt="" src="./images/image 19.png"></img>
               </div>
               <div className="content__trending__productitems__item2__executive__seat__chair">
-                <p>Executive Seat chair</p>
-                <p>$32.00</p>
+                <p className="name">Executive Seat chair</p>
+                <p className="price">$32.00</p>
               </div>
             </div>
             <div className="content__trending__productitems__item2__executive__seat">
@@ -66,8 +66,8 @@ function Trending() {
                 <img alt="" src="./images/image 28.png"></img>
               </div>
               <div className="content__trending__productitems__item2__executive__seat__chair">
-                <p>Executive Seat chair</p>
-                <p>$32.00</p>
+                <p className="name">Executive Seat chair</p>
+                <p className="price">$32.00</p>
               </div>
             </div>
           </div>

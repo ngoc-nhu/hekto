@@ -26,6 +26,9 @@
       margin-right: 58px;
     }
   }
+  #slider {
+    display: none;
+  }
   &__slide {
     box-sizing: border-box;
     display: grid;
@@ -185,6 +188,12 @@
       font-size: 13px;
     }
   }
+  .content__leatest #slider {
+    display: block;
+  }
+  #Leatest__pc {
+    display: none;
+  }
   .content__leatest__slide {
     display: grid;
     grid-template-columns: 85%;
@@ -192,6 +201,9 @@
     img {
       max-width: 100%;
     }
+  }
+  .content__leatest__slide__chairone {
+    margin: 0 10px;
   }
 }
 @media only screen and(min-width:495px) and(max-width:767px) {

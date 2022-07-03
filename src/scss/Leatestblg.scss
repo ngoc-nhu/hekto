@@ -66,6 +66,9 @@
     }
   }
 }
+#leatestblg__mobile {
+  display: none;
+}
 .content__leatestblg__top__esssential:hover {
   h4 {
     color: #fb2e86;
@@ -111,6 +114,13 @@
         font-size: 15px;
       }
     }
+  }
+  #leatestblg__mobile {
+    display: block;
+    margin: 0 10px;
+  }
+  #leatestbtg__pc {
+    display: none;
   }
 }
 @media only screen and(min-width:495px) and(max-width:767px) {

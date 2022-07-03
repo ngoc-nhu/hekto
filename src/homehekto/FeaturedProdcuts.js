@@ -16,9 +16,11 @@ function FeaturedProduct({ image }) {
       </div>
       <div className="content__featured__slide__chairone__price">
         <h2>Cantilever chair</h2>
-        <img alt="" src="./images/Rectangle 93.png"></img>
-        <img alt="" src="./images/Rectangle 94.png"></img>
-        <img alt="" src="./images/Rectangle 95.png"></img>
+        <div className="content__featured__slide__chairone__price__img">
+          <img alt="" src="./images/Rectangle 93.png"></img>
+          <img alt="" src="./images/Rectangle 94.png"></img>
+          <img alt="" src="./images/Rectangle 95.png"></img>
+        </div>
         <p className="code">Code - Y523201</p>
         <p className="price">$42.00</p>
       </div>
