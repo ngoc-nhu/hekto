@@ -26,13 +26,11 @@
       margin-right: 58px;
     }
   }
-  #slider {
-    display: none;
-  }
+
   &__slide {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 360px 360px 360px;
+    grid-template-columns: 1080px;
     justify-content: center;
     align-items: center;
     grid-column-gap: 35px;
@@ -164,6 +162,10 @@
     }
   }
 }
+#slider {
+  display: block;
+}
+
 .content__leatest__slide__chairone:hover {
   .content__leatest__slide__chairone__img__sale {
     display: block;
@@ -194,12 +196,6 @@
     }
   }
 
-  #leatest__pc {
-    display: none;
-  }
-  #leatest__tablet {
-    display: none;
-  }
   .content__leatest__slide {
     display: grid;
     grid-template-columns: 85%;

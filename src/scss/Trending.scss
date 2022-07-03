@@ -1,6 +1,6 @@
 .content__trending {
   #trending__mobile {
-    display: none;
+    display: block;
   }
   margin-top: 132px;
   &__products {
@@ -15,7 +15,7 @@
   &__productitems {
     &__item1 {
       display: grid;
-      grid-template-columns: 270px 270px 270px 270px;
+      grid-template-columns: 1080px;
       align-items: center;
       justify-content: center;
       grid-column-gap: 29px;
@@ -76,7 +76,7 @@
     }
     &__item2 {
       display: grid;
-      grid-template-columns: 420px 420px 266px;
+      grid-template-columns: 1080px;
       justify-content: center;
       align-items: center;
       grid-column-gap: 29px;
@@ -189,15 +189,8 @@
       }
     }
     &__productitems {
-      #trending__pc {
-        display: none;
-      }
       #trending__mobile {
         display: block;
-      }
-
-      #trending__tablet {
-        display: none;
       }
       &__item1 {
         display: grid;
@@ -258,9 +251,6 @@
       }
     }
     &__productitems {
-      #trending__pc {
-        display: none;
-      }
       #trending__mobile {
         display: none;
       }
@@ -280,9 +270,6 @@
         }
       }
       &__item2 {
-        #trending__tablet {
-          display: block;
-        }
         &__executive {
           height: 270px;
         }
@@ -320,30 +307,37 @@
   }
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {
-  .content__trending__productitems__item1 {
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-column-gap: 2%;
-    &__cantilever {
-      &__chair {
-        img {
-          top: 0;
-          width: 100%;
+  .content__trending__productitems {
+    #trending__mobile {
+      display: block;
+    }
+    &__item1 {
+      grid-template-columns: 95%;
+      grid-column-gap: 2%;
+      &__cantilever {
+        &__chair {
+          img {
+            top: 0;
+            width: 100%;
+          }
         }
       }
     }
   }
-  .content__trending__productitems__item2 {
-    grid-template-columns: 36% 36% 23%;
-    grid-column-gap: 2%;
-  }
-  .content__trending__productitems__item2__sale1__all {
-    img {
-      width: 85%;
+  .content__trending__productitems {
+    &__item2 {
+      grid-template-columns: 97%;
+      grid-column-gap: 2%;
     }
-  }
-  .content__trending__productitems__item2__sale2__all {
-    img {
-      width: 85%;
+    .content__trending__productitems__item2__sale1__all {
+      img {
+        width: 85%;
+      }
+    }
+    .content__trending__productitems__item2__sale2__all {
+      img {
+        width: 85%;
+      }
     }
   }
 }

@@ -8,6 +8,12 @@ class Leatest extends React.Component {
     var settings = {
       dots: true,
       arrows: false,
+      slidesToShow: 4,
+      slideToSroll: 4,
+      autoplay: true,
+      slidesPerRow: 1,
+      autoplaySpeed: 3000,
+      rows: 1,
       responsive: [
         {
           breakpoint: 767,
@@ -23,18 +29,6 @@ class Leatest extends React.Component {
             arrows: false,
             slidesToShow: 1,
             slideToSroll: 1,
-            autoplay: true,
-            slidesPerRow: 1,
-            autoplaySpeed: 3000,
-            rows: 1,
-          },
-        },
-        {
-          breakpoint: 1275,
-          settings: {
-            arrows: false,
-            slidesToShow: 4,
-            slideToSroll: 4,
             autoplay: true,
             slidesPerRow: 1,
             autoplaySpeed: 3000,
@@ -65,21 +59,7 @@ class Leatest extends React.Component {
           <a href="/#">Special Offer</a>
         </div>
         <div className="content__leatest__slide">
-          <div id="leatest__pc">
-            <Slider {...settings}>
-              {listImages.map((image) => (
-                <LeatestProducts image={image} />
-              ))}
-            </Slider>
-          </div>
           <div id="slider">
-            <Slider {...settings}>
-              {listImages.map((image) => (
-                <LeatestProducts image={image} />
-              ))}
-            </Slider>
-          </div>
-          <div id="leatest__tablet">
             <Slider {...settings}>
               {listImages.map((image) => (
                 <LeatestProducts image={image} />

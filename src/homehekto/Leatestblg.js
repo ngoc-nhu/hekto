@@ -5,14 +5,33 @@ import ReactDOM from "react-dom";
 import Slider from "react-slick";
 class Leatestblg extends React.Component {
   render() {
-    var settings = {
+    const listImages = [
+      "./images/JIUjvqe2ZHg.png",
+      "./images/2dc.png",
+      "./images/3dc.png",
+      "./images/JIUjvqe2ZHg.png",
+      "./images/2dc.png",
+      "./images/3dc.png",
+    ];
+    var settings1 = {
       dots: true,
       arrows: false,
-      slideToShow: 1,
-      slideToSroll: 1,
-      rows: 1,
-      autoplaySpeed: 3000,
+      slideToShow: 3,
+      slideToSroll: 3,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+      // responsive: [
+      //   {
+      //     breakpoint: 767,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       rows: 1,
+      //     },
+      //   },
+      // ],
     };
+
     return (
       <div className="content__leatestblg">
         <div className="content__leatestblg__blog">
@@ -20,16 +39,11 @@ class Leatestblg extends React.Component {
         </div>
         <div className="content__leatestblg__top">
           <div id="leatestblg__mobile">
-            <Slider {...settings}>
-              <LeatestBlog image="./images/JIUjvqe2ZHg.png" />
-              <LeatestBlog image="./images/2dc.png" />
-              <LeatestBlog image="./images/3dc.png" />
+            <Slider {...settings1}>
+              {listImages.map((image) => (
+                <LeatestBlog image={image} />
+              ))}
             </Slider>
-          </div>
-          <div id="leatestbtg__pc">
-            <LeatestBlog image="./images/JIUjvqe2ZHg.png" />
-            <LeatestBlog image="./images/2dc.png" />
-            <LeatestBlog image="./images/3dc.png" />
           </div>
         </div>
       </div>

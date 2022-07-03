@@ -12,7 +12,7 @@
   }
   &__slide {
     display: grid;
-    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-columns: 1080px;
     gap: 29px;
     height: 361px;
     text-align: center;
@@ -122,7 +122,7 @@
   }
 }
 #featured__mobile {
-  display: none;
+  display: block;
 }
 #featured__ipad {
   display: none;
@@ -240,10 +240,10 @@
   }
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {
+  #featured__mobile {
+    display: none;
+  }
   .content__featured {
-    #featured__mobile {
-      display: none;
-    }
     #featured__ipad {
       display: block;
     }

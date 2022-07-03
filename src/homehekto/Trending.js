@@ -14,16 +14,39 @@ function Trending() {
   var settings = {
     dots: false,
     arrows: false,
-    slidesToScroll: 2,
-    slidesToShow: 2,
+    slidesToScroll: 4,
+    slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 3000,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows: 2,
+        },
+      },
+      {
+        breakpoint: 495,
+        settings: {
+          slidesToShow: 1,
+          slideToSroll: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
   };
   var settings1 = {
     dots: false,
     arrows: false,
     autoplay: true,
     slidesPerRow: 1,
+    slideToSroll: 1,
+    slidesToShow: 2,
+    rows: 1,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -117,122 +140,6 @@ function Trending() {
                 </div>
               </div>
             </Slider>
-          </div>
-        </div>
-        <div id="trending__tablet">
-          <div className="content__trending__productitems__item1">
-            <Slider {...settings}>
-              {listImages.map((images) => (
-                <TrendingProducts image={images} />
-              ))}
-            </Slider>
-          </div>
-          <div className="content__trending__productitems__item2">
-            <Slider {...settings1}>
-              <div className="content__trending__productitems__item2__sale1">
-                <div className="content__trending__productitems__item2__sale1__all">
-                  <img alt="" src="./images/image 1162.png"></img>
-                </div>
-                <div className="content__trending__productitems__item2__sale1__products">
-                  <h2>23% off in all products</h2>
-                  <a href="/#">Shop Now</a>
-                </div>
-              </div>
-              <div className="content__trending__productitems__item2__sale2">
-                <div className="content__trending__productitems__item2__sale2__all">
-                  <img alt="" src="./images/image 1161.png"></img>
-                </div>
-                <div className="content__trending__productitems__item2__sale2__products">
-                  <h2>23% off in all products</h2>
-                  <a href="/#">View Collection</a>
-                </div>
-              </div>
-              <div className="content__trending__productitems__item2__executive">
-                <div className="content__trending__productitems__item2__executive__seat">
-                  <div className="content__trending__productitems__item2__executive__seat__img">
-                    <img alt="" src="./images/image 30.png"></img>
-                  </div>
-                  <div className="content__trending__productitems__item2__executive__seat__chair">
-                    <p className="name">Executive Seat chair</p>
-                    <p className="price">$32.00</p>
-                  </div>
-                </div>
-                <div className="content__trending__productitems__item2__executive__seat">
-                  <div className="content__trending__productitems__item2__executive__seat__img">
-                    <img alt="" src="./images/image 19.png"></img>
-                  </div>
-                  <div className="content__trending__productitems__item2__executive__seat__chair">
-                    <p className="name">Executive Seat chair</p>
-                    <p className="price">$32.00</p>
-                  </div>
-                </div>
-                <div className="content__trending__productitems__item2__executive__seat">
-                  <div className="content__trending__productitems__item2__executive__seat__img">
-                    <img alt="" src="./images/image 28.png"></img>
-                  </div>
-                  <div className="content__trending__productitems__item2__executive__seat__chair">
-                    <p className="name">Executive Seat chair</p>
-                    <p className="price">$32.00</p>
-                  </div>
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
-        <div id="trending__pc">
-          <div className="content__trending__productitems__item1">
-            {listImages.map((images) => (
-              <TrendingProducts image={images} />
-            ))}
-          </div>
-          <div className="content__trending__productitems__item2">
-            <div className="content__trending__productitems__item2__sale1">
-              <div className="content__trending__productitems__item2__sale1__all">
-                <img alt="" src="./images/image 1162.png"></img>
-              </div>
-              <div className="content__trending__productitems__item2__sale1__products">
-                <h2>23% off in all products</h2>
-                <a href="/#">Shop Now</a>
-              </div>
-            </div>
-            <div className="content__trending__productitems__item2__sale2">
-              <div className="content__trending__productitems__item2__sale2__all">
-                <img alt="" src="./images/image 1161.png"></img>
-              </div>
-              <div className="content__trending__productitems__item2__sale2__products">
-                <h2>23% off in all products</h2>
-                <a href="/#">View Collection</a>
-              </div>
-            </div>
-            <div className="content__trending__productitems__item2__executive">
-              <div className="content__trending__productitems__item2__executive__seat">
-                <div className="content__trending__productitems__item2__executive__seat__img">
-                  <img alt="" src="./images/image 30.png"></img>
-                </div>
-                <div className="content__trending__productitems__item2__executive__seat__chair">
-                  <p className="name">Executive Seat chair</p>
-                  <p className="price">$32.00</p>
-                </div>
-              </div>
-              <div className="content__trending__productitems__item2__executive__seat">
-                <div className="content__trending__productitems__item2__executive__seat__img">
-                  <img alt="" src="./images/image 19.png"></img>
-                </div>
-                <div className="content__trending__productitems__item2__executive__seat__chair">
-                  <p className="name">Executive Seat chair</p>
-                  <p className="price">$32.00</p>
-                </div>
-              </div>
-              <div className="content__trending__productitems__item2__executive__seat">
-                <div className="content__trending__productitems__item2__executive__seat__img">
-                  <img alt="" src="./images/image 28.png"></img>
-                </div>
-                <div className="content__trending__productitems__item2__executive__seat__chair">
-                  <p className="name">Executive Seat chair</p>
-                  <p className="price">$32.00</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

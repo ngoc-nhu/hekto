@@ -8,16 +8,18 @@ class Top extends React.Component {
     var settings = {
       dots: true,
       arrows: false,
+      slidesToShow: 4,
+      slideToSroll: 4,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      rows: 1,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 767,
           settings: {
             arrows: false,
             slidesToShow: 2,
             slideToSroll: 2,
-            autoplay: true,
-            slidesPerRow: 1,
-            autoplaySpeed: 3000,
             rows: 1,
           },
         },
@@ -27,15 +29,16 @@ class Top extends React.Component {
             arrows: false,
             slidesToShow: 1,
             slideToSroll: 1,
-            autoplay: true,
-            slidesPerRow: 1,
-            autoplaySpeed: 3000,
             rows: 1,
           },
         },
       ],
     };
     const listImages = [
+      "./images/image 20.png",
+      "./images/image 1168.png",
+      "./images/image 1171.png",
+      "./images/image 20.png",
       "./images/image 20.png",
       "./images/image 1168.png",
       "./images/image 1171.png",
@@ -53,11 +56,6 @@ class Top extends React.Component {
                 <TopCategories image={image} />
               ))}
             </Slider>
-          </div>
-          <div id="pc">
-            {listImages.map((image) => (
-              <TopCategories image={image} />
-            ))}
           </div>
         </div>
       </div>

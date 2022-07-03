@@ -46,13 +46,6 @@ class Shopex extends React.Component {
               ))}
             </Slider>
           </div>
-          <div id="shopex__pc">
-            <Slider {...settings}>
-              {listImages.map((image) => (
-                <ShopexOffer image={image} />
-              ))}
-            </Slider>
-          </div>
         </div>
       </div>
     );
