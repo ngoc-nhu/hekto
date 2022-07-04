@@ -7,8 +7,7 @@ class Shopex extends React.Component {
     var settings = {
       dots: true,
       infinite: false,
-      arows: false,
-      speed: 500,
+      arrows: false,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,

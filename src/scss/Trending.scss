@@ -142,7 +142,7 @@
         }
       }
       &__executive {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         row-gap: 20px;
         &__seat {

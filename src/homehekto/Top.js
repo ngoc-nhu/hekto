@@ -7,28 +7,25 @@ class Top extends React.Component {
   render() {
     var settings = {
       dots: true,
+      infinite: false,
       arrows: false,
       slidesToShow: 4,
-      slideToSroll: 4,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      rows: 1,
+      slidesToScroll: 4,
+      initialSlide: 0,
       responsive: [
         {
           breakpoint: 767,
           settings: {
-            arrows: false,
             slidesToShow: 2,
-            slideToSroll: 2,
-            rows: 1,
+            slidesToScroll: 2,
+            rows: 2,
           },
         },
         {
           breakpoint: 495,
           settings: {
-            arrows: false,
             slidesToShow: 1,
-            slideToSroll: 1,
+            slidesToScroll: 1,
             rows: 1,
           },
         },

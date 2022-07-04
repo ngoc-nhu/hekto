@@ -13,23 +13,22 @@ class Leatestblg extends React.Component {
       "./images/2dc.png",
       "./images/3dc.png",
     ];
-    var settings1 = {
+    var settings = {
       dots: true,
+      infinite: false,
       arrows: false,
-      slideToShow: 3,
-      slideToSroll: 3,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
-      // responsive: [
-      //   {
-      //     breakpoint: 767,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //       rows: 1,
-      //     },
-      //   },
-      // ],
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows: 1,
+          },
+        },
+      ],
     };
 
     return (
@@ -39,7 +38,7 @@ class Leatestblg extends React.Component {
         </div>
         <div className="content__leatestblg__top">
           <div id="leatestblg__mobile">
-            <Slider {...settings1}>
+            <Slider {...settings}>
               {listImages.map((image) => (
                 <LeatestBlog image={image} />
               ))}

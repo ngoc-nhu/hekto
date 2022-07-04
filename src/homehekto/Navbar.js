@@ -5,14 +5,14 @@ function Navbar() {
         <a href="/#">Hekto</a>
       </div>
       <div className="navbar__menu">
-        <a href="/#" className="navbar__menu__selected">
+        <a href="/" className="navbar__menu__selected">
           Home<i class="fal fa-chevron-down"></i>
         </a>
-        <a href="/#">Pages</a>
-        <a href="/#">Products</a>
-        <a href="/#">Blog</a>
-        <a href="/#">Shop</a>
-        <a href="/#">Contact</a>
+        <a href="/">Pages</a>
+        <a href="/">Products</a>
+        <a href="/">Blog</a>
+        <a href="/">Shop</a>
+        <a href="/">Contact</a>
       </div>
       <div className="navbar__search">
         <div className="navbar__search__input">

@@ -1,6 +1,7 @@
 .content__leatestblg {
   .slick-track {
-    width: 100%;
+    // width: 100%;
+    // width: auto !important;
   }
   .slick-slide {
     width: 360px;
@@ -21,7 +22,7 @@
     align-items: center;
     justify-content: center;
     &__esssential {
-      width: 360px;
+      width: 100%;
       font-family: "Josefin Sans";
       font-size: 18px;
       color: #151875;

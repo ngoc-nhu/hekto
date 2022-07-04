@@ -7,13 +7,12 @@ class Leatest extends React.Component {
   render() {
     var settings = {
       dots: true,
+      infinite: false,
       arrows: false,
+      speed: 500,
       slidesToShow: 4,
-      slideToSroll: 4,
-      autoplay: true,
-      slidesPerRow: 1,
-      autoplaySpeed: 3000,
-      rows: 1,
+      slidesToScroll: 4,
+      initialSlide: 0,
       responsive: [
         {
           breakpoint: 767,
@@ -26,12 +25,8 @@ class Leatest extends React.Component {
         {
           breakpoint: 495,
           settings: {
-            arrows: false,
             slidesToShow: 1,
-            slideToSroll: 1,
-            autoplay: true,
-            slidesPerRow: 1,
-            autoplaySpeed: 3000,
+            slidesToScroll: 1,
             rows: 1,
           },
         },

@@ -7,13 +7,10 @@ class Featured extends React.Component {
   render() {
     var settings = {
       dots: true,
+      infinite: false,
       arrows: false,
       slidesToShow: 4,
-      slideToSroll: 4,
-      autoplay: true,
-      slidesPerRow: 1,
-      autoplaySpeed: 3000,
-      rows: 1,
+      slidesToScroll: 4,
       responsive: [
         {
           breakpoint: 767,
